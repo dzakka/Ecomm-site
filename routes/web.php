@@ -22,4 +22,6 @@ Route::get('/insert-info', 'EcommController@insert');
 Route::post('/store-info', 'EcommController@store');
 Route::get('/show-info','EcommController@show');
 Route::get('add-to-cart/{id}','CartController@show');
-Route::get('/show-cart','UserCartController@index');
+Route::get('/show-cart','UserCartController@index')->name('cart');
+Route::get('/buy/{id}','BuyEcommController@buy');
+Route::post('/buy-now/{id}','BuyEcommController@store');

@@ -32,10 +32,11 @@ class UserCartController extends Controller
             if(in_array($user->id,$arr_users_old_int))
             {
                 array_push($show_items, $cart_items);
+                
             }
          }
-         
-     return view('ecomm.cart')->with('cart_items',$show_items);    
+         return view('ecomm.cart')->with('cart_items',$show_items);      
+     
     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 }

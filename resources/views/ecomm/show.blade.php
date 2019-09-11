@@ -18,7 +18,7 @@
             <p>{{$row->desc}}</p>
             <p>{{$row->cost}}</p>
             <p>{{$row->stock}}</p>
-         <p><button> Buy Now </button><span style="margin-left:20px;"><button><a href="add-to-cart/{{$row->id}}">Add to cart</a></button></span></p>
+         <a><p><button> Buy Now </button></a><span style="margin-left:20px;"><button><a href="add-to-cart/{{$row->id}}">Add to cart</a></button></span></p>
          </div>    
         @endforeach
        {{$values->links()}} 
