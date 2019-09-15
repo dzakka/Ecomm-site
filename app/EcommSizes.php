@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ecomm extends Model
+class EcommSizes extends Model
 {
     //
     protected $casts = [

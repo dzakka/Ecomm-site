@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
+use App\Ecomm;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,11 +12,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
+   
     /**
      * Show the application dashboard.
      *
@@ -25,4 +22,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function show()
+    {   
+        
+        
+        $values = DB::table('ecomms')->simplePaginate(9);
+        return view('welcome')->with('values',$values);
+    }
+
+    
 }

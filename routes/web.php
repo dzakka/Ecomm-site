@@ -11,12 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+Route::get('/','HomeController@show');
 Route::get('/home', 'EcommController@show')->name('home');
 Route::get('/insert-info', 'EcommController@insert');
 Route::post('/store-info', 'EcommController@store');

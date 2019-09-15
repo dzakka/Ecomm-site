@@ -18,10 +18,19 @@ class BuyEcommController extends Controller
     }
 
     public function buy(Request $request, $id)
-    {
+    {   
+        $user = Auth::user();
 
+        $verify_id_card = DB::table('buys')->get()->where('user_id',$user->id);
         
-        return view('ecomm.buy')->with('id',$id);
+        if(!$verify_id_card->isEmpty())
+        {
+            return view('ecomm.buy')->with('id',$id)->with('card_info',$verify_id_card);
+        }
+        else
+        {
+         return view('ecomm.buy')->with('id',$id);
+        }
 
     }
 

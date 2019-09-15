@@ -6,6 +6,7 @@ $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
@@ -17,3 +18,102 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+
+// Trying to change the style of how Items display in /show-info page
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  
+  .img-thumbnail {
+    padding: 0.25rem;
+    background-color: #f6f8fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    margin-right:40px
+  }
+  
+#main-card{
+
+    margin-bottom:40px;
+
+}
+
+.top-text
+{
+
+color:white;  
+}
+
+.top-bar
+{
+
+  background-color:black;
+  height:29px;
+  text-align: right;
+  font-weight:bold;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+}
+.top-bar>a{
+  color:white;
+  font-size:12px;
+}
+.top-bar>a:hover{
+  color:white;
+}  
+
+.font-weight-bold {
+  font-weight: 900 !important;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 0.9);
+  font-size:17px;
+  margin-top:20px;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 485px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  height:70px;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  line-height: inherit;
+  white-space: nowrap;
+  margin-top:25px;
+}
