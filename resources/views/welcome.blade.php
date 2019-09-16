@@ -1,7 +1,13 @@
+@extends('layouts.bottom')
+
+@section('footer')
+
+@endsection
+
+
+
 @extends('layouts.app')
-
 @section('content')
-
 <div class="cols-lg-12">
     <div id="demo"class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -37,10 +43,10 @@
         </div>    
         <div class="row">
             @foreach($values as $value)
-                <div class="col-lg-4 text-center">
-                    <p><img src="/images/{{$value->image}}" height="275" width="220"></p>
+                <div class="col-lg-4 text-center" id="font-edit">
+                <p><a href="/show-item/{{$value->id}}"><img src="/images/{{$value->image}}" height="275" width="220"></a></p>
                     <h3>{{$value->title}}</h3>
-                    <h6>{{$value->desc}}</h6>
+                    <h6>Dept: {{$value->category}}</h6>
                     <p>${{$value->cost}}.00</p>
                 </div>    
             @endforeach
@@ -50,4 +56,6 @@
     </div>
 
 </div>      
-@endsection
+@stop
+
+

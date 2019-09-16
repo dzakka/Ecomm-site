@@ -31,5 +31,11 @@ class HomeController extends Controller
         return view('welcome')->with('values',$values);
     }
 
+
+    public function footer()
+    {
+
+        return view('layouts.bottom');
+    }
     
 }
