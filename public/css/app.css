@@ -30,7 +30,11 @@
   color: white;
 }
 
+<<<<<<< HEAD
 .top-bar {
+=======
+#top-bar {
+>>>>>>> isu
   background-color: black;
   height: 29px;
   text-align: right;
@@ -74,7 +78,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
+<<<<<<< HEAD
   height: 70px;
+=======
+  height: 60px;
+>>>>>>> isu
   vertical-align: middle;
   font-family: "Montserrat", sans-serif;
 }
@@ -90,6 +98,37 @@
   margin-top: 25px;
 }
 
+<<<<<<< HEAD
+=======
+#font-edit {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
+  text-align: left;
+  background-color: #f8fafc;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/22/10/44/banner-1686943__340.jpg");
+  /* Set a specific height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+>>>>>>> isu
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
