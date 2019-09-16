@@ -30,9 +30,10 @@
 </head>
 <body>
 <div id="app">
-     <!--- This is top black bar-->   
+     <!--- This is top black bar-->
+
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">     
             <a class="navbar-brand" href="#">
              <!-- <img class="rounded-circle" src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="30" height="30" alt=""> -->
               <span class="font-weight-bold" style="font-size:38px;">Dannie's Store</span>
@@ -51,10 +52,9 @@
                           <a class="nav-link" href="#">Disabled</a>
                         </li>
                 </ul>
-                
+              </nav>
         </div>  
-    </nav>
-
+  </div>
   </div>    
 </div>     
 
