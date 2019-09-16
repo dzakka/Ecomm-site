@@ -30,7 +30,7 @@
   color: white;
 }
 
-.top-bar {
+#top-bar {
   background-color: black;
   height: 29px;
   text-align: right;
@@ -74,7 +74,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  height: 70px;
+  height: 60px;
   vertical-align: middle;
   font-family: "Montserrat", sans-serif;
 }
