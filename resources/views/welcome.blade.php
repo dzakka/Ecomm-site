@@ -24,13 +24,13 @@
                   </ul>
                   <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="https://cdn.pixabay.com/photo/2016/09/22/10/44/banner-1686943__340.jpg" alt="Los Angeles" width="1200" height="530">
+                          <img src="/images/banner-1.jpg" alt="Los Angeles" width="1200" height="530">
                         </div>
                         <div class="carousel-item">
-                          <img src="https://www.bannerbatterien.com/upload/filecache/Banner-Batterien-Windrder2-web_bd5cb0f721881d106522f6b9cc8f5be6.jpg" alt="Chicago" width="1200" height="530">
+                          <img src="/images/banner-2.jpg" alt="Chicago" width="1200" height="530">
                         </div>
                         <div class="carousel-item">
-                          <img src="https://cdn.shopify.com/s/files/1/1381/1501/products/9334059_rfr_summer_banners_ci_1024x1024.jpg?v=1468450863" alt="New York" width="1200" height="530">
+                          <img src="https://cdn.pixabay.com/photo/2016/09/22/10/44/banner-1686943__340.jpg" alt="Chicago" width="1200" height="530">
                         </div>
                       </div>
                       

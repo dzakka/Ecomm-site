@@ -151,7 +151,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("https://cdn.pixabay.com/photo/2016/09/22/10/44/banner-1686943__340.jpg");
+  background-image: url("http://test.com/images/banner-4.png");
 
   /* Set a specific height */
   min-height: 550px; 
@@ -170,8 +170,7 @@ body {
 .button-plus {
   border: 0.5px solid #ced4da;
   background-color: white;
-  color: black;
-  padding: 5px 8px 5px 8px;
+  color: 10px 8px 10px 8px;
   font-size: 12px;
   cursor: pointer;
   border-color: black;

@@ -45,22 +45,22 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2">
-            <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+            <img src="/images/bottom-1.jpg" height="129" width="129">
             </div>    
             <div class="col-lg-2">
-            <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+                <img src="/images/bottom-2.jpg" height="129" width="129">
             </div>
             <div class="col-lg-2">
-                    <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+                <img src="/images/bottom-3.jpg" height="129" width="129">
             </div>
             <div class="col-lg-2">
-                    <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+                <img src="/images/bottom-4.jpg" height="129" width="129">
             </div>
             <div class="col-lg-2">
-                    <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+                <img src="/images/bottom-5.jpg" height="129" width="129">
             </div>
             <div class="col-lg-2">
-                    <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg" height="129" width="129">
+                <img src="/images/bottom-6.jpg" height="129" width="129">
             </div>                                  
         </div>
     </div>    
