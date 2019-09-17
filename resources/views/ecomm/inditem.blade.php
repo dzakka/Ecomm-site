@@ -32,7 +32,7 @@
                         </select>    
                     </div>
                     <p>Quantity</p>
-                    <div class="form-inline" style="margin-left:50px;margin-top:0px;">
+                    <div class="form-inline" style="margin-left:28px;margin-top:0px;">
                         <button onclick="plus()" class="button-plus">+</button>
                         <input type="number" id="final" value=0 class="form-control">
                         <button onclick="minus()" class="button-plus">-</button>    

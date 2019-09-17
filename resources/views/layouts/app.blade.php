@@ -33,12 +33,12 @@
 <div id="app">
      <!--- This is top black bar-->
      <nav class="navbar navbar-expand-sm bg-dark navbar-dark"style="height:29px;">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Create an Account</a>
+                    <a class="nav-link" href="/register">Create an Account</a>
                 </li>
             </ul>
         </div>
