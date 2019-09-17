@@ -128,7 +128,54 @@ body {
   background-size: cover;
 }
 
+<<<<<<< HEAD
 >>>>>>> isu
+=======
+.button-plus {
+  border: 0.5px solid #ced4da;
+  background-color: white;
+  color: black;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-color: black;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.button-plus:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-cart {
+  border: 1px solid #ced4da;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-color: black;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.button-cart:hover {
+  background-color: black;
+  color: white;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+>>>>>>> 443549cd6b7fdf7089f14aff887f3eafac19265f
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -6924,7 +6971,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: black;
 }
 
 a.bg-dark:hover,
