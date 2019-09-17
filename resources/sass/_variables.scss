@@ -152,3 +152,51 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.button-plus {
+  border: 0.5px solid #ced4da;
+  background-color: white;
+  color: black;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-color: black;
+  color: black;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.button-plus:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.button-cart {
+  border: 1px solid #ced4da;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-color: black;
+  color: black;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.button-cart:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.bg-dark {
+  background-color:black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:white;
+}
