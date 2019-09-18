@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Ecomm;
+use Illuminate\Support\Arr;
+use App\Cart;
 
 
 class EcommController extends Controller

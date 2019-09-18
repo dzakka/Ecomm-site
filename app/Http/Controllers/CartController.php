@@ -18,11 +18,11 @@ class CartController extends Controller
         $this->middleware('auth');
     }
 
-    public function show(Request $request, $id)
+    public function store(Request $request)
     {
-        
+
+            $item_id = $request->input('item_id');
             $user=  Auth::user();
-            $item_id = $id;
             $counter = $item_id -2;
             $cart_item = DB::table('ecomms')->get()->where('id',$item_id)->toArray();
             if($verify_item =DB::table('carts')->get()->where('item_id',$item_id)->toArray())
@@ -64,15 +64,21 @@ class CartController extends Controller
                                 $cust_cart->desc =$item->desc;
                                 $cust_cart->cost =$item->cost;
                                 $cust_cart->stock =$item->stock;
-                                $cust_cart->image ='nothing';
+                                $cust_cart->image =$item->image;
+                                $cust_cart->notes =$item->notes;
+                                $cust_cart->category =$item->category;
                                 $cust_cart->carted_at = Date('y-m-d');
                                 $cust_cart->belongs_to_user= $user->id;
-                                $cust_cart->item_id = $item->id;
+                                $cust_cart->item_id = $item_id;
+                                $cust_cart->color = $request->input('color');
+                                $cust_cart->size = $request->input('size');
+                                $cust_cart->quantity = $request->input('quantity');
                                 $cust_cart->save();
                                 return 'success';
                             }
 
                     }
         
-    }
+    }   
+
 }

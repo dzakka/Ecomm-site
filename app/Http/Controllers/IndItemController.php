@@ -15,7 +15,7 @@ class IndItemController extends Controller
         public function show(Request $request ,$id)
         {       
                 $new_color = array();    
-               $items= DB::table('ecomms')->get()->where('id',$id)->toArray();
+                $items= DB::table('ecomms')->get()->where('id',$id)->toArray();
 
                foreach($items as $item)
                {

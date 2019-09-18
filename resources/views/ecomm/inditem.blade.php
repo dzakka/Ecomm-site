@@ -6,6 +6,8 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+<form  action="/add-to-cart" method ="POST" enctype="multipart/form-data"> 
+    {{csrf_field()}}
 <div class="row text-center" style="margin-top:20px;">
         @foreach($items as $item)
             <div class="col-lg-7">
@@ -13,37 +15,40 @@
             </div>    
            <div class="col-lg-4">
             <h4>${{$item->cost}}.00</h4>
+           <input type="hidden" name="item_id" value="{{$item->id}}">
                <p>Or 6 weekly interest-free payments of $33.16 with Laybuy Laybuy What's this?</p>
                <p>Or 6 weekly interest-free payments of $33.16 with Laybuy Laybuy What's this?</p>
                     <div>
                         <p>Size</p>
                             <select name="size" class="form-group custom-select custom-select-xs">
-                                <option>Small</option>
-                                <option>Large</option>
-                                <option>Extra Large</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="extra-large">Extra Large</option>
                             </select>    
                     </div>
                     <div>
                         <p>Color</p>
-                        <select name="size" class="custom-select custom-select-xs">
-                            @foreach($colors as $color)
-                        <option>{{$color}}</option>
-                            @endforeach
+                        <select name="color" class="custom-select custom-select-xs">
+                            @for($x=0;$x< count($colors);$x++)
+                            <option value="{{$colors[$x]}}">{{$colors[$x]}}</option>
+                            @endfor
                         </select>    
                     </div>
                     <p>Quantity</p>
-                    <div class="form-inline" style="margin-left:28px;margin-top:0px;">
-                        <button onclick="plus()" class="button-plus">+</button>
-                        <input type="number" id="final" value=0 class="form-control">
-                        <button onclick="minus()" class="button-plus">-</button>    
+                    <div style="margin-left:0px;margin-top:0px;">
+                        <!--<button onclick="plus()" class="button-plus">+</button> -->
+                        <input type="number" id="final" name="quantity" class="form-control">
+                        <!--<button onclick="minus()" class="button-plus">-</button> -->
                     </div>
 
 
-                <button class="button-cart" style="margin-top:20px;">Add to Cart<i class='fas fa-cart-plus'></i></button>
+              <button type="submit" class="button-cart" style="margin-top:20px;">Add to Cart</button>
+                
             </div>
         @endforeach 
 </div>
 </div>
+</form>
 @endsection
 
 
