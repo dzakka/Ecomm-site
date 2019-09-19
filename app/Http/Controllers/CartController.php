@@ -48,7 +48,7 @@ class CartController extends Controller
                                     
                                     //$arr_users_new_str = json_encode($arr_users_new_int);
                                     DB::table('carts')->where('item_id',$item_id)->update(['belongs_to_user'=>$arr_users_new_str]);
-                                    return redirect()->back()->with('message','Item added succesfully');
+                                    return redirect()->back()->with('message','Item added succesfully to you already existing cart');
                                 
                             }
                         }
@@ -74,7 +74,7 @@ class CartController extends Controller
                                 $cust_cart->size = $request->input('size');
                                 $cust_cart->quantity = $request->input('quantity');
                                 $cust_cart->save();
-                                return 'success';
+                                return redirect()->back()->with('message','Item added succesfully to your cart');
                             }
 
                     }

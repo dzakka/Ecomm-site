@@ -35,12 +35,18 @@
      <nav class="navbar navbar-expand-sm bg-dark navbar-dark"style="height:29px;">
             <ul class="navbar-nav ">
                 <li class="nav-item">
+                    <a class="nav-link" href="/register">Create an Account</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/register">Create an Account</a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                   <button type="submit">Logout</button>
+                  </form>
                 </li>
-            </ul>
+                
         </div>
     </nav>
 

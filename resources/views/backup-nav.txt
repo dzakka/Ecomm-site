@@ -51,38 +51,3 @@
 
 
 
-
-
-        <div class="col-lg-7">
-                <img src="/images/{{$item->image}}" width="400" height="630" style="margin-left:30px;">
-            </div>    
-           <div class="col-lg-4">
-            <h4>${{$item->cost}}.00</h4>
-               <p>Or 6 weekly interest-free payments of $33.16 with Laybuy Laybuy What's this?</p>
-               <p>Or 6 weekly interest-free payments of $33.16 with Laybuy Laybuy What's this?</p>
-                    <div>
-                        <p>Size</p>
-                            <select name="size" class="form-group custom-select custom-select-xs">
-                                <option>Small</option>
-                                <option>Large</option>
-                                <option>Extra Large</option>
-                            </select>    
-                    </div>
-                    <div>
-                        <p>Color</p>
-                        <select name="size" class="custom-select custom-select-xs">
-                            @foreach($colors as $color)
-                            <option value="">{{$color}}</option>
-                            @endforeach 
-                        </select>    
-                    </div>
-                    <p>Quantity</p>
-                    <div class="form-inline" style="margin-left:28px;margin-top:0px;">
-                        <button onclick="plus()" class="button-plus">+</button>
-                        <input type="number" id="final" value=1 class="form-control">
-                        <button onclick="minus()" class="button-plus">-</button>    
-                    </div>
-
-
-                <button type="submit" class="button-cart" style="margin-top:20px;">Add to Cart</button>
-            </div>

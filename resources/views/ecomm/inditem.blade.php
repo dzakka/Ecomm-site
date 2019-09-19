@@ -6,6 +6,15 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+        @if(session()->has('message'))
+        <div class="alert alert-success">
+            {{session()->get('message')}}
+        </div>
+    @elseif(session()->has('error'))
+    <div class="alert alert-danger">
+            {{session()->get('error')}}
+        </div>       
+    @endif
 <form  action="/add-to-cart" method ="POST" enctype="multipart/form-data"> 
     {{csrf_field()}}
 <div class="row text-center" style="margin-top:20px;">
@@ -43,9 +52,10 @@
 
 
               <button type="submit" class="button-cart" style="margin-top:20px;">Add to Cart</button>
-                
             </div>
         @endforeach 
+
+
 </div>
 </div>
 </form>
